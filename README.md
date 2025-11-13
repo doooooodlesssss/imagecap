@@ -84,28 +84,3 @@ It refines the caption by:
 - improving grammar and coherence  
 
 This produces **human-like, grounded captions**.
-
----
-
-## 🧪 Dataset
-
-### Dataset: **MSCOCO 2014 (Karpathy Split)**  
-- **Train:** 113,287  
-- **Validation:** 5,000  
-- **Test:** 5,000  
-- **Metrics:** BLEU-1/2/3/4, METEOR, ROUGE-L, CIDEr, SPICE  
-- **Features:**  
-  - YOLOv8 pretrained on COCO  
-  - Xception pretrained on ImageNet  
-
----
-
-## ⚙️ Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/Spectral-Captioning.git
-cd Spectral-Captioning
-
-# Install dependencies
-pip install -r requirements.txt
