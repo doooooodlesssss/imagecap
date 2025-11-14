@@ -47,14 +47,18 @@ Our framework enhances the original CNN–GRU pipeline with dual attention, freq
 
 ## Quantitative Results
 
-| Model                    | BLEU-1    | BLEU-4    | METEOR    | ROUGE-L   | CIDEr     | SPICE     |
-| ------------------------ | --------- | --------- | --------- | --------- | --------- | --------- |
-| Baseline (Xception+GRU)  | 0.399     | 0.066     | 0.142     | 0.324     | 0.248     | 0.081     |
-| + YOLO Object Stream     | 0.431     | 0.079     | 0.151     | 0.339     | 0.284     | 0.088     |
-| + Dual Attention Fusion  | 0.456     | 0.089     | 0.158     | 0.351     | 0.309     | 0.093     |
-| + DCT Frequency Fusion   | 0.478     | 0.098     | 0.163     | 0.362     | 0.334     | 0.099     |
-| + Spectral Attention     | 0.495     | 0.106     | 0.168     | 0.374     | 0.359     | 0.104     |
-| + VLM Refinement (Final) | **0.512** | **0.114** | **0.173** | **0.386** | **0.382** | **0.110** |
+| Model                              | BLEU-1    | BLEU-2    | BLEU-3    | BLEU-4    | METEOR    | ROUGE-L   | CIDEr     | SPICE     |
+| ---------------------------------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| **Baseline (Xception + GRU)**      | 0.399     | 0.224     | 0.123     | 0.066     | 0.142     | 0.324     | 0.248     | 0.081     |
+| **+ YOLO Object Features**         | 0.395     | 0.221     | 0.125     | 0.079     | 0.151     | **0.320** | 0.284     | 0.088     |
+| **+ Dual Attention Fusion**        | 0.398     | 0.226     | 0.125     | **0.079** | 0.155     | 0.340     | 0.305     | **0.087** |
+| **+ DCT Frequency Fusion**         | 0.405     | 0.230     | 0.122     | **0.075** | 0.160     | 0.355     | 0.330     | 0.092     |
+| **+ Spectral Attention Module**    | 0.470     | 0.285     | 0.180     | 0.102     | **0.161** | 0.360     | 0.350     | 0.095     |
+| **+ LLM Refinement (Final Model)** | **0.512** | **0.324** | **0.201** | **0.114** | **0.173** | **0.386** | **0.382** | **0.110** |
+
+---
+
+If you'd like, I can **insert this into your full README**, keeping formatting consistent and placing it exactly where it fits best.
 
 ---
 
