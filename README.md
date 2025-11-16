@@ -33,7 +33,9 @@ This framework improves upon classical CNN+RNN architectures, resulting in impro
 
 ## Base Repository
 This work builds upon and extends the baseline architecture from the following open-source repository:
+
 [abdelhadie-amalla/image_captioning](https://github.com/abdelhadie-almalla/image_captioning)
+
 Our framework enhances the original CNN–GRU pipeline with dual attention, frequency-domain fusion, spectral attention, and instruction-tuned VLM caption refinement.
 
 ---
@@ -78,15 +80,14 @@ Run the main project stages using the provided scripts:
 
 ## Project Structure
 
-SpectralCaptioning-VLM/ 
-├── README.md 
-├── requirements.txt 
-├── configs/config.yaml 
+SpectralCaptioning-VLM/
+├── README.md
+├── requirements.txt
+├── configs/config.yaml
 ├── src/original_imgcap.py 
-├── src/improv_imgcap.py 
 ├── src/vlm_refiner_wrapper.py 
-├── src/helpers.py 
-├── scripts/*.sh 
+├── src/helpers.py
+└── scripts/*.sh 
 
 ---
 
